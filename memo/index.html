@@ -1,204 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <meta name="author" content="Fuminori Tatsuoka (立岡文理)">
-        <link rel="canonical" href="https://fuminori-tatsuoka.github.io/memo/">
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>メモ - F. Tatsuoka（立岡文理）</title>
-        <!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <link href="../bootstrap.min.css" rel="stylesheet">
-        <link href="../customize.css" rel="stylesheet">
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+   <link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
+  <!-- <link rel="stylesheet" href="/css/reset.min.css"> -->
+  <link rel="stylesheet" href="/css/new.css">
+   <title>個人的なコード等</title>  
+</head>
+<body>
 
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="..">F. Tatsuoka（立岡文理）</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<a href="https://f-ttok.github.io/">English</a>
+|
+<a href="https://f-ttok.github.io/ja/">日本語</a>
+|
+<a href="https://f-ttok.github.io/memo/">メモ</a>
 
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href=".." class="nav-link">English</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="../index_ja/" class="nav-link">日本語</a>
-                            </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">メモ</a>
-                            </li>
-                        </ul>
+<hr>
 
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../index_ja/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
+<!-- Content appended here -->
+<div class="franklin-content"><h2 id="個人的なコード等"><a href="#個人的なコード等">個人的なコード等</a></h2>
+<ul>
+<li><p><a href="https://gist.github.com/f-ttok/e3eb1a08bea3c41dade456bc8a147c9f">VS Codeのsettings.json</a></p>
+</li>
+<li><p><a href="https://github.com/f-ttok/beamer-ja">Beamerのテンプレート</a></p>
+<ul>
+<li><p>数式が見やすくて，落ち着いた感じになって，誰でも&#40;Windows・Linuxユーザー&#41;使えるようにテンプレートを作った．</p>
+</li>
+<li><p>僕は太めのフォントが好きなのでフォントをもうちょっと重くして使うことが多い．</p>
+</li>
+</ul>
+</li>
+<li><p><a href="https://gist.github.com/f-ttok/fb1b55d7f0b3841a6257cb0b7d714de6">ellipj.jl</a></p>
+<ul>
+<li><p><a href="https://ja.wikipedia.org/wiki/&#37;E3&#37;83&#37;A4&#37;E3&#37;82&#37;B3&#37;E3&#37;83&#37;93&#37;E3&#37;81&#37;AE&#37;E6&#37;A5&#37;95&#37;E5&#37;86&#37;86&#37;E9&#37;96&#37;A2&#37;E6&#37;95&#37;B0">Jacobiの楕円関数</a>を複素数 \(u\) に対して計算する．</p>
+</li>
+<li><p><a href="https://www.mathworks.com/matlabcentral/fileexchange/17747-jacobi-elliptic-functions-sn-cn-and-dn-of-complex-phase">MATLABの実装</a>があったので，これをJuliaで使えるように移した．</p>
+</li>
+<li><p>PyCallで <code>scipy.special.ellipj</code> を呼んでいるのでPyCallとScipyをインストールしておく必要がある</p>
+</li>
+</ul>
+</li>
+<li><p><a href="https://gist.github.com/f-ttok/c7d44ec0b33990c7c48bedb545bc6968">macro.tex</a></p>
+<ul>
+<li><p>LaTeXで文章を打つときに使うマクロ．</p>
+</li>
+<li><p>ヾ&#40;oﾟωﾟo&#41;ﾉﾞらくちーん</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="jupyter_themesの設定_2019-07-25"><a href="#jupyter_themesの設定_2019-07-25">Jupyter themesの設定 &#40;2019-07-25&#41;</a></h2>  jupyter notebookを使う時に<a href="https://github.com/dunovank/jupyter-themes">jupyter-themes</a>を使うと楽しい． 現在の設定は以下の通り．</p>
+<pre><code class="language-bash">jt -t gruvboxd -fs 13 -tfs 13 -ofs 13 -cellw 95% -T -N -kl -dfonts</code></pre><div class="page-foot">
+  <div class="copyright">
+    &copy; Fuminori TATSUOKA. Last modified: June 07, 2020. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+    
+        <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">個人的なコード等</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#jupyter-themes-2019-07-25" class="nav-link">Jupyter themesの設定 (2019-07-25)</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    
+        <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
 
-<h2 id="_1">個人的なコード等</h2>
-<ul>
-<li><a href="https://gist.github.com/f-ttok/e3eb1a08bea3c41dade456bc8a147c9f">VS Codeのsettings.json</a></li>
-<li><a href="https://github.com/f-ttok/beamer-ja">Beamerのテンプレート</a><ul>
-<li>数式が見やすくて，落ち着いた感じになって，誰でも(Windows・Linuxユーザー)使えるようにテンプレートを作った．</li>
-<li>僕は太めのフォントが好きなのでフォントをもうちょっと重くして使うことが多い．</li>
-</ul>
-</li>
-<li><a href="https://gist.github.com/f-ttok/fb1b55d7f0b3841a6257cb0b7d714de6">ellipj.jl</a><ul>
-<li><a href="https://ja.wikipedia.org/wiki/%E3%83%A4%E3%82%B3%E3%83%93%E3%81%AE%E6%A5%95%E5%86%86%E9%96%A2%E6%95%B0">Jacobiの楕円関数</a>を複素数 $u$ に対して計算する．</li>
-<li><a href="https://www.mathworks.com/matlabcentral/fileexchange/17747-jacobi-elliptic-functions-sn-cn-and-dn-of-complex-phase">MATLABの実装</a>があったので，これをJuliaで使えるように移した．</li>
-<li>PyCallで <code>scipy.special.ellipj</code> を呼んでいるのでPyCallとScipyをインストールしておく必要がある</li>
-</ul>
-</li>
-<li><a href="https://gist.github.com/f-ttok/c7d44ec0b33990c7c48bedb545bc6968">macro.tex</a><ul>
-<li>LaTeXで文章を打つときに使うマクロ．</li>
-<li>ヾ(oﾟωﾟo)ﾉﾞらくちーん</li>
-</ul>
-</li>
-</ul>
-<h2 id="jupyter-themes-2019-07-25">Jupyter themesの設定 (2019-07-25)</h2>
-<p>jupyter notebookを使う時に<a href="https://github.com/dunovank/jupyter-themes">jupyter-themes</a>を使うと楽しい．
-現在の設定は以下の通り．</p>
-<pre><code class="bash">jt -t gruvboxd -fs 13 -tfs 13 -ofs 13 -cellw 95% -T -N -kl -dfonts
-</code></pre></div>
-            </div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-                <p>&#9426; 2018-2020 Fuminori Tatsuoka.</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../js/base.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
-        <script src="../extra.js" defer></script>
-        <script src="../search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div>
-
-    </body>
-
+    
+  </body>
 </html>
