@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>memo/index.html</loc>
-    <lastmod>2020-12-03</lastmod>
+    <loc>index.html</loc>
+    <lastmod>2023-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>index.html</loc>
-    <lastmod>2021-06-02</lastmod>
+    <loc>memo/index.html</loc>
+    <lastmod>2023-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>ja/index.html</loc>
-    <lastmod>2021-06-02</lastmod>
+    <lastmod>2023-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>

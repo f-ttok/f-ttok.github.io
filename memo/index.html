@@ -1,75 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="/libs/katex/katex.min.css">
-     
-   <link rel="stylesheet" href="/libs/highlight/github.min.css">
-   
-  <!-- <link rel="stylesheet" href="/css/reset.min.css"> -->
-  <link rel="stylesheet" href="/css/new.css">
-   <title>個人的なコード等</title>  
-</head>
-<body>
-
-<a href="https://f-ttok.github.io/">English</a>
-|
-<a href="https://f-ttok.github.io/ja/">日本語</a>
-|
-<a href="https://f-ttok.github.io/memo/">メモ</a>
-
-<hr>
-
-<!-- Content appended here -->
-<div class="franklin-content"><h2 id="個人的なコード等"><a href="#個人的なコード等">個人的なコード等</a></h2>
-<ul>
-<li><p><a href="https://gist.github.com/f-ttok/e3eb1a08bea3c41dade456bc8a147c9f">VS Codeのsettings.json</a></p>
-</li>
-<li><p><a href="https://gist.github.com/f-ttok/39496526e46a6aef466ab11ad13ba9bb">VS CodeでLaTeXを書くためのスニペット</a></p>
-</li>
-<li><p>&#91;Beamerのテンプレート &#40;upLaTeX版&#41;&#93;</p>
-<ul>
-<li><p>日本語でちょっとしたスライドを作るときに速くて楽ちんヾ&#40;oﾟωﾟo&#41;ﾉﾞ</p>
-</li>
-<li><p>色をMatplotlibに合わせてあるのでデフォルトの設定のままでOK！</p>
-</li>
-</ul>
-</li>
-<li><p><a href="https://github.com/f-ttok/beamer-ja">Beamerのテンプレート &#40;xeLaTeX版&#41;</a></p>
-<ul>
-<li><p>プロジェクターで投影することを考えて文字が太めのテンプレートを作ったヾ&#40;oﾟωﾟo&#41;ﾉﾞ潰れない！</p>
-</li>
-</ul>
-</li>
-<li><p><a href="https://gist.github.com/f-ttok/fb1b55d7f0b3841a6257cb0b7d714de6">ellipj.jl</a></p>
-<ul>
-<li><p><a href="https://ja.wikipedia.org/wiki/&#37;E3&#37;83&#37;A4&#37;E3&#37;82&#37;B3&#37;E3&#37;83&#37;93&#37;E3&#37;81&#37;AE&#37;E6&#37;A5&#37;95&#37;E5&#37;86&#37;86&#37;E9&#37;96&#37;A2&#37;E6&#37;95&#37;B0">Jacobiの楕円関数</a>を複素数 \(u\) に対して計算する．</p>
-</li>
-<li><p><a href="https://www.mathworks.com/matlabcentral/fileexchange/17747-jacobi-elliptic-functions-sn-cn-and-dn-of-complex-phase">MATLABの実装</a>があったので，これをJuliaで使えるように移した．</p>
-</li>
-<li><p>PyCallで <code>scipy.special.ellipj</code> を呼んでいるのでPyCallとScipyをインストールしておく必要がある</p>
-</li>
-</ul>
-</li>
-<li><p><a href="https://gist.github.com/f-ttok/c7d44ec0b33990c7c48bedb545bc6968">macro.tex</a></p>
-<ul>
-<li><p>LaTeXで文章を打つときに使うマクロ．</p>
-</li>
-<li><p>ヾ&#40;oﾟωﾟo&#41;ﾉﾞらくちーん</p>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="jupyter_themesの設定_2019-07-25"><a href="#jupyter_themesの設定_2019-07-25">Jupyter themesの設定 &#40;2019-07-25&#41;</a></h2>
-<p>jupyter notebookを使う時に<a href="https://github.com/dunovank/jupyter-themes">jupyter-themes</a>を使うと楽しい． 現在の設定は以下の通り．</p>
-<pre><code class="language-bash">jt -t gruvboxd -fs 13 -tfs 13 -ofs 13 -cellw 95&#37; -T -N -kl -dfonts</code></pre>
-<div class="page-foot">
-  <div class="copyright">
-    &copy; Fuminori TATSUOKA. Last modified: December 03, 2020. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>.
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/katex/katex.min.css"> <link rel=stylesheet  href="/libs/highlight/github.min.css"> <link rel=stylesheet  href="/css/new.css"> <title>個人的なコード等</title> <a href="https://f-ttok.github.io/">English</a> | <a href="https://f-ttok.github.io/ja/">日本語</a> | <a href="https://f-ttok.github.io/memo/">メモ</a> <hr> <div class=franklin-content ><h2 id="個人的なコード等"><a href="#個人的なコード等" class=header-anchor >個人的なコード等</a></h2> <ul> <li><p><a href="https://gist.github.com/f-ttok/e3eb1a08bea3c41dade456bc8a147c9f">VS Codeのsettings.json</a></p> <li><p><a href="https://gist.github.com/f-ttok/39496526e46a6aef466ab11ad13ba9bb">VS CodeでLaTeXを書くためのスニペット</a></p> <li><p>&#91;Beamerのテンプレート &#40;upLaTeX版&#41;&#93;</p> <ul> <li><p>日本語でちょっとしたスライドを作るときに速くて楽ちんヾ&#40;oﾟωﾟo&#41;ﾉﾞ</p> <li><p>色をMatplotlibに合わせてあるのでデフォルトの設定のままでOK！</p> </ul> <li><p><a href="https://github.com/f-ttok/beamer-ja">Beamerのテンプレート &#40;xeLaTeX版&#41;</a></p> <ul> <li><p>プロジェクターで投影することを考えて文字が太めのテンプレートを作ったヾ&#40;oﾟωﾟo&#41;ﾉﾞ潰れない！</p> </ul> <li><p><a href="https://gist.github.com/f-ttok/fb1b55d7f0b3841a6257cb0b7d714de6">ellipj.jl</a></p> <ul> <li><p><a href="https://ja.wikipedia.org/wiki/&#37;E3&#37;83&#37;A4&#37;E3&#37;82&#37;B3&#37;E3&#37;83&#37;93&#37;E3&#37;81&#37;AE&#37;E6&#37;A5&#37;95&#37;E5&#37;86&#37;86&#37;E9&#37;96&#37;A2&#37;E6&#37;95&#37;B0">Jacobiの楕円関数</a>を複素数 \(u\) に対して計算する．</p> <li><p><a href="https://www.mathworks.com/matlabcentral/fileexchange/17747-jacobi-elliptic-functions-sn-cn-and-dn-of-complex-phase">MATLABの実装</a>があったので，これをJuliaで使えるように移した．</p> <li><p>PyCallで <code>scipy.special.ellipj</code> を呼んでいるのでPyCallとScipyをインストールしておく必要がある</p> </ul> <li><p><a href="https://gist.github.com/f-ttok/c7d44ec0b33990c7c48bedb545bc6968">macro.tex</a></p> <ul> <li><p>LaTeXで文章を打つときに使うマクロ．</p> <li><p>ヾ&#40;oﾟωﾟo&#41;ﾉﾞらくちーん</p> </ul> </ul> <h2 id="juliaで研究するときのもろもろ"><a href="#juliaで研究するときのもろもろ" class=header-anchor >Juliaで研究するときのもろもろ</a></h2> <ul> <li><p>Jupyter Labを使おう</p> <li><p>Jupyter Labの設定で</p> <ul> <li><p>閉じたらカーネルを落とすようにしよう</p> <li><p>カッコを閉じるように設定しよう</p> </ul> </ul> <h2 id="jupyter_themesの設定_2019-07-25"><a href="#jupyter_themesの設定_2019-07-25" class=header-anchor >Jupyter themesの設定 &#40;2019-07-25&#41;</a></h2> <p>jupyter notebookを使う時に<a href="https://github.com/dunovank/jupyter-themes">jupyter-themes</a>を使うと楽しい． 現在の設定は以下の通り．</p> <pre><code class=language-bash >jt -t gruvboxd -fs 13 -tfs 13 -ofs 13 -cellw 95&#37; -T -N -kl -dfonts</code></pre>
+<div class=page-foot >
+  <div class=copyright >
+    &copy; Fuminori TATSUOKA. Last modified: August 20, 2023. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>.
   </div>
 </div>
-</div><!-- CONTENT ENDS HERE -->
+</div>
     
         <script src="/libs/katex/katex.min.js"></script>
 <script src="/libs/katex/auto-render.min.js"></script>
@@ -79,7 +14,3 @@
     
         <script src="/libs/highlight/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
-
-    
-  </body>
-</html>
