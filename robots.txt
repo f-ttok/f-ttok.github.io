@@ -1,4 +1,4 @@
-Sitemap: https://f-ttok.github.io/sitemap.xml
+Sitemap: https://f-ttok.github.io\sitemap.xml
 
 User-agent: *
 Disallow:
